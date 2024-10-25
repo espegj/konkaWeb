@@ -12,8 +12,10 @@ export const App = () => {
       <div className="flex flex-col">
         <img className="h-20 self-end" src={topArm} />
         <img className="h-20 self-start" src={leftArm} />
-        <img className="h-48 self-end" src={rightFoot} />
-        <img className="h-40 self-start" src={leftFoot} />
+        <div className="flex justify-between w-full h-64">
+          <img className="h-40 self-end" src={leftFoot} />
+          <img className="h-48" src={rightFoot} />
+        </div>
       </div>
       <img
         className="h-32 absolute top-28 mr-auto ml-auto text-center left-0 right-0"
