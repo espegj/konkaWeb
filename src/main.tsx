@@ -3,6 +3,9 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { App } from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Privacy } from "./Privacy.tsx";
+import logo from "./assets/logo.png";
+import { OAuthCallback } from "./Redirect.tsx";
 
 const router = createBrowserRouter([
   {
@@ -11,12 +14,16 @@ const router = createBrowserRouter([
     errorElement: <p>Oops!</p>,
   },
   {
-    path: "contact",
-    element: <p>Contact</p>,
+    path: "privacy",
+    element: <Privacy />,
   },
   {
-    path: "privacy",
-    element: <p>Privacy</p>,
+    path: "oauthGarmin",
+    element: <OAuthCallback />,
+  },
+  {
+    path: "logo",
+    element: <img className="h-64" src={logo} />,
   },
 ]);
 

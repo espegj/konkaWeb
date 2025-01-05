@@ -25,7 +25,6 @@ export const App = () => {
         <DownloadButton />
         <div className="flex gap-4 p-4 justify-center text-[#6498ED]">
           <Link to={`privacy`}>Privacy</Link>
-          <Link to={`contact`}>Contact</Link>
         </div>
       </div>
     </div>
